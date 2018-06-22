@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Calculadora incrível</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container calculator">
+		<div class="row justify-content-around">
+			<div class="col-12 text-center">
+				<input type="number" id="elem1">
+			</div>
+			<div class="col-12">
+				<div class="container operations">
+					<div class="row align-items-center text-center">
+						<div class="col text-center op">
+							<input type="radio" name="operation" id="sum" value='+' checked>
+							<label for="sum">+</label>
+						</div>
+						<div class="col text-center op">
+							<input type="radio" name="operation" id="subtract" value="-">
+							<label for="subtract">-</label>
+						</div>
+						<div class="col text-center op">
+							<input type="radio" name="operation" id="multiply" value="x" >
+							<label for="multiply">&times</label>
+						</div>
+						<div class="col text-center op">
+							<input type="radio" name="operation" id="divide" value="÷">
+							<label for="divide">÷</label>
+						</div>
+						<div class="col text-center op">
+							<input type="radio" name="operation" id="potence" value="ˆ">
+							<label for="potence">^</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 text-center">
+				<input type="number" id="elem2">
+			</div>
+			<div class="col-12 text-center">
+				<button id="calculate-button">=</button>	
+			</div>
+			<div class="col-12 text-center">
+				<h2 id="result">RESULTADO</h2>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
